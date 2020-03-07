@@ -3,5 +3,5 @@ sap.ui.define([
 ], function(Controller) {
   "use strict";
 
-  return Controller.extend("com.mrb.UI5-Navigation-and-Routing.controller.MainView", {});
+  return Controller.extend("com.mrb.UI5-Navigation-and-Routing.controller.App", {});
 });

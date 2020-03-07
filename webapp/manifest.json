@@ -40,7 +40,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "com.mrb.UI5-Navigation-and-Routing.view.MainView",
+			"viewName": "com.mrb.UI5-Navigation-and-Routing.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
@@ -80,18 +80,20 @@
 				"viewPath": "com.mrb.UI5-Navigation-and-Routing.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
+				"transition": "slide",
 				"async": true
 			},
 			"routes": [{
-				"name": "RouteMainView",
-				"pattern": "RouteMainView",
-				"target": ["TargetMainView"]
+				"name": "appHome",
+				"pattern": "",
+				"target": ["home"]
 			}],
 			"targets": {
-				"TargetMainView": {
+				"home": {
 					"viewType": "XML",
+					"viewId": "home",
 					"viewLevel": 1,
-					"viewName": "MainView"
+					"viewName": "Home"
 				}
 			}
 		}
