@@ -4,6 +4,12 @@ This repository is meant to serve as example for how navigation and routing work
 
 ### The complete flow of the application as it can also be seen on the [Documentation](https://sapui5.hana.ondemand.com/#/topic/1b6dcd39a6a74f528b27ddb22f15af0d).
 
+You basically read it like this - starting from the home page (here simply called 'Home') you can do the following:
+
+* Display a _Not Found_ page
+* Navigate to a list of employees and drill further down to see a _Details_ page for each employee
+* Show an _Employee Overview_ that they can search and sort
+
 ![](readme_images/routing_overview.png)
 
 
