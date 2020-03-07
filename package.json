@@ -1,0 +1,28 @@
+{
+        "name": "UI5-Navigation-and-Routing",
+        "version": "0.0.1",
+        "engines": {
+                "node": "12.x.x"
+        },
+        "scripts": {
+                "start": "ui5 serve -o index.html",
+                "serve": "ui5 serve",
+                "test": "npm run lint && npm run karma",
+                "karma-ci": "karma start karma-ci.conf.js",
+                "karma": "rimraf coverage && npm run karma-ci",
+                "lint": "eslint webapp",
+                "build:ui": "ui5 build --clean-dest --dest approuter/webapp "
+        },
+        "dependencies": {
+                "@openui5/sap.m": "^1.73.1",
+                "shx": "^0.3.2"
+        },
+        "devDependencies": {
+                "@ui5/cli": "^1.12.1",
+                "karma": "^4.4.1",
+                "karma-chrome-launcher": "^3.1.0",
+                "karma-coverage": "^2.0.1",
+                "karma-ui5": "^1.1.0",
+                "eslint": "^6.7.2"
+        }
+}
