@@ -40,7 +40,7 @@ You basically read it like this - starting from the home page (here simply calle
 
 Basically what we define here is, that our main view "App" will be loaded initially as it is declared as `rootView` within our manifest.json. We then use the routing configuration with an initial (empty) route to display content when first opening up the application. We do this by using the property `controlId` and `controlAggregation`. The Router uses the initial route which points to our second view called "Home" that implements the aggregation `page` together with some content, for example a button, and adds it into to the "App" view or rather into the App control as aggregation of `pages`. 
 
-```javascript
+```json
 "sap.ui5": {
     "rootView": {
         "viewName": "com.mrb.UI5-Navigation-and-Routing.view.App",
