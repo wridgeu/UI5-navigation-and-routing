@@ -19,10 +19,16 @@
         },
         "devDependencies": {
                 "@ui5/cli": "^1.12.1",
+                "eslint": "^6.7.2",
                 "karma": "^4.4.1",
                 "karma-chrome-launcher": "^3.1.0",
                 "karma-coverage": "^2.0.1",
                 "karma-ui5": "^1.1.0",
-                "eslint": "^6.7.2"
+                "ui5-middleware-livereload": "^0.1.6"
+        },
+        "ui5": {
+                "dependencies": [
+                        "ui5-middleware-livereload"
+                ]
         }
 }
