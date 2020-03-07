@@ -21,6 +21,7 @@
         },
         "ui5": {
                 "dependencies": [
+                        "@openui5/sap.m",
                         "ui5-middleware-livereload"
                 ]
         }
