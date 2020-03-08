@@ -80,7 +80,10 @@
 				"viewPath": "com.mrb.UI5-Navigation-and-Routing.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
-				"transition": "slide",
+				"transition": "slide",   
+				"bypassed": {
+					"target": "notFound"
+				 },
 				"async": true
 			},
 			"routes": [{
@@ -94,6 +97,12 @@
 					"viewId": "home",
 					"viewLevel": 1,
 					"viewName": "Home"
+				},
+				"notFound": {
+					"viewType": "XML",
+					"viewId": "notFound",
+					"viewName": "NotFound",
+					"transition": "show"
 				}
 			}
 		}

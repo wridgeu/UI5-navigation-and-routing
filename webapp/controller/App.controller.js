@@ -1,7 +1,7 @@
 sap.ui.define([
-  "sap/ui/core/mvc/Controller"
-], function(Controller) {
+  "com/mrb/UI5-Navigation-and-Routing/controller/BaseController"
+], function(BaseController) {
   "use strict";
 
-  return Controller.extend("com.mrb.UI5-Navigation-and-Routing.controller.App", {});
+  return BaseController.extend("com.mrb.UI5-Navigation-and-Routing.controller.App", {});
 });
