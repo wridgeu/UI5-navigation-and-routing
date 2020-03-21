@@ -15,12 +15,11 @@
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri" : "localService/metadata.xml"
+					"localUri": "localService/metadata.xml"
 				}
 			}
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -37,7 +36,6 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"rootView": {
 			"viewName": "com.mrb.UI5-Navigation-and-Routing.view.App",
@@ -69,9 +67,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -80,17 +80,26 @@
 				"viewPath": "com.mrb.UI5-Navigation-and-Routing.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
-				"transition": "slide",   
+				"transition": "slide",
 				"bypassed": {
 					"target": "notFound"
-				 },
+				},
 				"async": true
 			},
-			"routes": [{
-				"name": "appHome",
-				"pattern": "",
-				"target": ["home"]
-			}],
+			"routes": [
+				{
+					"name": "appHome",
+					"pattern": "",
+					"target": [
+						"home"
+					]
+				},
+				{
+					"name": "employeeList",
+					"pattern": "employees",
+					"target": "employees"
+				}
+			],
 			"targets": {
 				"home": {
 					"viewType": "XML",
@@ -103,6 +112,12 @@
 					"viewId": "notFound",
 					"viewName": "NotFound",
 					"transition": "show"
+				},
+				"employees": {
+					"viewId": "employeeList",
+					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee",
+					"viewName": "EmployeeList",
+					"viewLevel": 2
 				}
 			}
 		}
