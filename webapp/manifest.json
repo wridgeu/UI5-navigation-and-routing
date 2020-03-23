@@ -98,6 +98,11 @@
 					"name": "employeeList",
 					"pattern": "employees",
 					"target": "employees"
+				},
+				{
+					"pattern": "employees/{employeeId}",
+					"name": "employee",
+					"target": "employee"
 				}
 			],
 			"targets": {
@@ -118,6 +123,11 @@
 					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee",
 					"viewName": "EmployeeList",
 					"viewLevel": 2
+				},
+				"employee": {
+					"viewId": "employee",
+					"viewName": "employee.Employee",
+					"viewLevel": 3
 				}
 			}
 		}
