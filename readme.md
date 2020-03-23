@@ -18,3 +18,5 @@ For more information check:
 
 * [Wiki entry](https://github.com/SAPMarco/SAPMarco.github.io/wiki/UI5-Basics-of-Routing) for basics of routing or 
 * [UI5 documentation](https://sapui5.hana.ondemand.com/#/topic/1b6dcd39a6a74f528b27ddb22f15af0d)
+* [UI5ers Buzz #46](https://blogs.sap.com/2020/02/05/ui5er-buzz-46-routing-with-nested-components/)
+* [UI5ers Buzz #48](https://blogs.sap.com/2020/03/23/ui5ers-buzz-48-consuming-title-changes-of-nested-components/)
