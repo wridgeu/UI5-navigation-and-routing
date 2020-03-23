@@ -6,3 +6,4 @@ dist/
 package-lock.json
 mta_archives/
 deployer/resources/
+.vscode
