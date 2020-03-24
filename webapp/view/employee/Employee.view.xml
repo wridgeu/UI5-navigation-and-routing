@@ -2,13 +2,14 @@
     xmlns="sap.m" 
     xmlns:mvc="sap.ui.core.mvc" 
     xmlns:f="sap.ui.layout.form" busyIndicatorDelay="0">
-    <Page id="employeePage" title="{i18n>EmployeeDetailsOf} {FirstName} {LastName}" showNavButton="true" navButtonPress=".onNavBack" class="sapUiResponsiveContentPadding">
+    <Page id="employeePage" title="{i18n>formEmployeeDetailsOf} {FirstName} {LastName}" showNavButton="true" navButtonPress=".onNavBack" class="sapUiResponsiveContentPadding">
         <content>
             <Panel id="employeePanel" width="auto" class="sapUiResponsiveMargin sapUiNoContentPadding">
                 <headerToolbar>
                     <Toolbar>
-                        <Title text="{i18n>EmployeeIDColon} {EmployeeID}" level="H2"/>
+                        <Title text="{i18n>formEmployeeIDColon} {EmployeeID}" level="H2"/>
                         <ToolbarSpacer />
+                        <Link text="{i18n>FlipToResume}" tooltip="{i18n>FlipToResume.tooltip}" press=".onShowResume"/>
                     </Toolbar>
                 </headerToolbar>
                 <content>
