@@ -32,6 +32,8 @@ You basically read it like this - starting from the home page (here simply calle
 * Step 16: Handle Invalid Hashes by Listening to Bypassed Events
 * Step 17: Listen to Matched Events of Any Route
 
+Implemented = :white_check_mark:
+
 # Credits
 
 For more information check:
