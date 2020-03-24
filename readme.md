@@ -14,14 +14,14 @@ You basically read it like this - starting from the home page (here simply calle
 
 # Tutorial Steps
 
-* Step 1: Set Up the Initial App
-* Step 2: Enable Routing
-* Step 3: Catch Invalid Hashes
-* Step 4: Add a Back Button to Not Found Page
-* Step 5: Display a Target Without Changing the Hash
-* Step 6: Navigate to Routes with Hard-Coded Patterns
-* Step 7: Navigate to Routes with Mandatory Parameters
-* Step 8: Navigate with Flip Transition
+* Step 1: Set Up the Initial App :white_check_mark:
+* Step 2: Enable Routing :white_check_mark:
+* Step 3: Catch Invalid Hashes :white_check_mark:
+* Step 4: Add a Back Button to Not Found Page :white_check_mark:
+* Step 5: Display a Target Without Changing the Hash :white_check_mark:
+* Step 6: Navigate to Routes with Hard-Coded Patterns :white_check_mark:
+* Step 7: Navigate to Routes with Mandatory Parameters :white_check_mark:
+* Step 8: Navigate with Flip Transition :white_check_mark:
 * Step 9: Allow Bookmarkable Tabs with Optional Query Parameters
 * Step 10: Implement "Lazy Loading"
 * Step 11: Assign Multiple Targets
