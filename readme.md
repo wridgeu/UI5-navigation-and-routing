@@ -12,6 +12,26 @@ You basically read it like this - starting from the home page (here simply calle
 
 ![](readme_images/routing_overview.png)
 
+# Tutorial Steps
+
+* Step 1: Set Up the Initial App
+* Step 2: Enable Routing
+* Step 3: Catch Invalid Hashes
+* Step 4: Add a Back Button to Not Found Page
+* Step 5: Display a Target Without Changing the Hash
+* Step 6: Navigate to Routes with Hard-Coded Patterns
+* Step 7: Navigate to Routes with Mandatory Parameters
+* Step 8: Navigate with Flip Transition
+* Step 9: Allow Bookmarkable Tabs with Optional Query Parameters
+* Step 10: Implement "Lazy Loading"
+* Step 11: Assign Multiple Targets
+* Step 12: Make a Search Bookmarkable
+* Step 13: Make Table Sorting Bookmarkable
+* Step 14: Make Dialogs Bookmarkable
+* Step 15: Reuse an Existing Route
+* Step 16: Handle Invalid Hashes by Listening to Bypassed Events
+* Step 17: Listen to Matched Events of Any Route
+
 # Credits
 
 For more information check:
