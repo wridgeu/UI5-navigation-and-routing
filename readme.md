@@ -12,6 +12,21 @@ You basically read it like this - starting from the home page (here simply calle
 
 ![](readme_images/routing_overview.png)
 
+# Get Started
+You can just clone this repository, run npm install and use the [UI5 tooling](https://github.com/SAP/ui5-tooling) to locally serve the application in order to debug/learn from it.
+
+Hint: it already uses the livereload-middleware for the [UI5 tooling](https://github.com/SAP/ui5-tooling), so changes while serving trigger and immediate update in the browser.
+
+```sh
+git clone <repository-url>
+
+cd <repository>
+
+npm install
+
+npm start
+```
+
 # Tutorial Steps
 
 * Step 1: Set Up the Initial App :white_check_mark:
