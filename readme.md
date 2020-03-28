@@ -15,13 +15,13 @@ You basically read it like this - starting from the home page (here simply calle
 # Tutorial Steps
 
 * Step 1: Set Up the Initial App :white_check_mark:
-* Step 2: Enable Routing :white_check_mark:
-* Step 3: Catch Invalid Hashes :white_check_mark:
-* Step 4: Add a Back Button to Not Found Page :white_check_mark:
-* Step 5: Display a Target Without Changing the Hash :white_check_mark:
-* Step 6: Navigate to Routes with Hard-Coded Patterns :white_check_mark:
-* Step 7: Navigate to Routes with Mandatory Parameters :white_check_mark:
-* Step 8: Navigate with Flip Transition :white_check_mark:
+* Step 2: Enable Routing :white_check_mark: ([d794190](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/d794190d86fa3d75debb52da22d9b8b875ff65f1))
+* Step 3: Catch Invalid Hashes :white_check_mark: ([1c39c78](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/1c39c783ad765a141e05e62eaac1a428c4048811))
+* Step 4: Add a Back Button to Not Found Page :white_check_mark: ([1c39c78](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/1c39c783ad765a141e05e62eaac1a428c4048811))
+* Step 5: Display a Target Without Changing the Hash :white_check_mark: ([574db78](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/574db78c3f2210b479f21e41b6852da455c4e232))
+* Step 6: Navigate to Routes with Hard-Coded Patterns :white_check_mark: ([61af8c1](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/61af8c1732bf74596d5734dde805079aba068954))
+* Step 7: Navigate to Routes with Mandatory Parameters :white_check_mark: ([f99257a](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/f99257a0554b31470d75c0aa331b4f61154acc4b))
+* Step 8: Navigate with Flip Transition :white_check_mark: ([fdea453](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/fdea4537be8cc4fc146786c14c0f2e532184d1f0))
 * Step 9: Allow Bookmarkable Tabs with Optional Query Parameters
 * Step 10: Implement "Lazy Loading"
 * Step 11: Assign Multiple Targets
