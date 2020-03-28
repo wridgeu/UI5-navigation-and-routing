@@ -11,13 +11,13 @@
                 "build:ui": "ui5 build --clean-dest --dest approuter/webapp "
         },
         "dependencies": {
-                "@openui5/sap.m": "^1.73.1",
+                "@openui5/sap.m": "^1.76.0",
                 "shx": "^0.3.2"
         },
         "devDependencies": {
-                "@ui5/cli": "^1.12.1",
-                "eslint": "^6.7.2",
-                "ui5-middleware-livereload": "^0.1.6"
+                "@ui5/cli": "^1.14.0",
+                "eslint": "^6.8.0",
+                "ui5-middleware-livereload": "^0.1.9"
         },
         "ui5": {
                 "dependencies": [
