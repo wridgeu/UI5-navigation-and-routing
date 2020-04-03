@@ -12,10 +12,10 @@
                         <mvc:XMLView viewName="com.mrb.UI5-Navigation-and-Routing.view.employee.ResumeProjects"></mvc:XMLView>
                     </IconTabFilter>
                     <IconTabFilter id="hobbiesTab" text="{i18n>tabHobbies}" key="Hobbies">
-                        <Text text="{Hobbies}"/>
+                        <!-- place content via lazy loading OLD: <Text text="{Hobbies}"/>-->
                     </IconTabFilter>
                     <IconTabFilter id="notesTab" text="{i18n>tabNotes}" key="Notes">
-                        <Text text="{Notes}"/>
+                         <!-- place content via lazy OLD: <Text text="{Notes}"/>-->
                     </IconTabFilter>
                 </items>
             </IconTabBar>

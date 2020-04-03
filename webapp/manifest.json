@@ -142,6 +142,22 @@
 					"viewName": "employee.Resume",
 					"viewLevel": 4,
 					"transition": "flip"
+				},
+				"resumeTabHobbies": {
+					"viewId": "resumeHobbies",
+					"parent": "employeeResume",
+					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee",
+					"viewName": "ResumeHobbies",
+					"controlId": "hobbiesTab",
+					"controlAggregation": "content"
+				},
+				"resumeTabNotes": {
+					"viewId": "resumeNotes",
+					"parent": "employeeResume",
+					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee",
+					"viewName": "ResumeNotes",
+					"controlId": "notesTab",
+					"controlAggregation": "content"
 				}
 			}
 		}
