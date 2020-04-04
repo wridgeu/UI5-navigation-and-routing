@@ -103,6 +103,14 @@
 					"target": "employees"
 				},
 				{
+					"pattern": "employees/overview",
+					"name": "employeeOverview",
+					"target": [
+						"employeeOverviewTop",
+						"employeeOverviewContent"
+					]
+				},
+				{
 					"pattern": "employees/{employeeId}",
 					"name": "employee",
 					"target": "employee"
@@ -157,6 +165,28 @@
 					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee",
 					"viewName": "ResumeNotes",
 					"controlId": "notesTab",
+					"controlAggregation": "content"
+				},
+				"employeeOverview": {
+					"viewId": "employeeOverview",
+					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee.overview",
+					"viewName": "EmployeeOverview",
+					"viewLevel": 2
+				},
+				"employeeOverviewTop": {
+					"viewId": "employeeOverviewTop",
+					"parent": "employeeOverview",
+					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee.overview",
+					"viewName": "EmployeeOverviewTop",
+					"controlId": "EmployeeOverviewParent",
+					"controlAggregation": "content"
+				},
+				"employeeOverviewContent": {
+					"viewId": "employeeOverviewContent",
+					"parent": "employeeOverview",
+					"viewPath": "com.mrb.UI5-Navigation-and-Routing.view.employee.overview",
+					"viewName": "EmployeeOverviewContent",
+					"controlId": "EmployeeOverviewParent",
 					"controlAggregation": "content"
 				}
 			}
