@@ -40,7 +40,7 @@ npm start
 * Step 9: Allow Bookmarkable Tabs with Optional Query Parameters :white_check_mark: [66a8048](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/66a8048db3790aafb779202dd82fd7c9d1a312ce)
 * Step 10: Implement "Lazy Loading" :white_check_mark: [8d6ecce](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/8d6eccea5146c4eeb7b79d092b5776db784e5608)
 * Step 11: Assign Multiple Targets :white_check_mark: [6795425](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/67954255fa08fc8d361a7c6302b40471ae1df2c6)
-* Step 12: Make a Search Bookmarkable
+* Step 12: Make a Search Bookmarkable :white_check_mark: [a06ed69](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/a06ed69d4df852ac1b16d2944f846be48188a982)
 * Step 13: Make Table Sorting Bookmarkable
 * Step 14: Make Dialogs Bookmarkable
 * Step 15: Reuse an Existing Route
