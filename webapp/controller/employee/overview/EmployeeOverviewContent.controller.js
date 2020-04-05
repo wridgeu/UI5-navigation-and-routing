@@ -49,9 +49,9 @@ sap.ui.define([
 		},
 
 		onSearchEmployeesTable: function (oEvent) {
-			//this._applySearchFilter(oEvent.getSource().getValue());
+			//this._applySearchFilter(oEvent.getSource().getValue()); -> now being handled when route is matched
 			var oRouter = this.getRouter();
-			// update the hash with the current search term
+			// update the hash with the current search term -> ?search=<searchValue>
 			this._oRouterArgs["?query"].search = oEvent.getSource().getValue();
 			oRouter.navTo("employeeOverview", this._oRouterArgs, true /*no history*/);
 		},
