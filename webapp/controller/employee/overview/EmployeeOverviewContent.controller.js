@@ -5,7 +5,7 @@ sap.ui.define([
 	"sap/ui/model/Sorter",
 	"sap/m/ViewSettingsDialog",
 	"sap/m/ViewSettingsItem"
-], function(
+], function (
 	BaseController,
 	Filter,
 	FilterOperator,
@@ -18,25 +18,45 @@ sap.ui.define([
 	return BaseController.extend("com.mrb.UI5-Navigation-and-Routing.controller.employee.overview.EmployeeOverviewContent", {
 
 		onInit: function () {
+
+			var oRouter = this.getRouter();
+
 			this._oTable = this.byId("employeesTable");
 			this._oVSD = null;
 			this._sSortField = null;
 			this._bSortDescending = false;
 			this._aValidSortFields = ["EmployeeID", "FirstName", "LastName"];
 			this._sSearchQuery = null;
+			this._oRouterArgs = null;
 
 			this._initViewSettingsDialog();
+
+			// make the search bookmarkable
+			oRouter.getRoute("employeeOverview").attachMatched(this._onRouteMatched, this);
 		},
 
-		onSortButtonPressed : function () {
+		_onRouteMatched: function (oEvent) {
+			// save the current query state
+			this._oRouterArgs = oEvent.getParameter("arguments");
+			//make sure we either have a value or empty hand empty object
+			this._oRouterArgs["?query"] = this._oRouterArgs["?query"] || {};
+			// search/filter via URL hash
+			this._applySearchFilter(this._oRouterArgs["?query"].search);
+		},
+
+		onSortButtonPressed: function () {
 			this._oVSD.open();
 		},
 
-		onSearchEmployeesTable : function (oEvent) {
-			this._applySearchFilter( oEvent.getSource().getValue() );
+		onSearchEmployeesTable: function (oEvent) {
+			//this._applySearchFilter(oEvent.getSource().getValue());
+			var oRouter = this.getRouter();
+			// update the hash with the current search term
+			this._oRouterArgs["?query"].search = oEvent.getSource().getValue();
+			oRouter.navTo("employeeOverview", this._oRouterArgs, true /*no history*/);
 		},
 
-		_initViewSettingsDialog : function () {
+		_initViewSettingsDialog: function () {
 			this._oVSD = new ViewSettingsDialog("vsd", {
 				confirm: function (oEvent) {
 					var oSortItem = oEvent.getParameter("sortItem");
@@ -48,7 +68,7 @@ sap.ui.define([
 			this._oVSD.addSortItem(new ViewSettingsItem({
 				key: "EmployeeID",
 				text: "Employee ID",
-				selected: true			// by default the MockData is sorted by EmployeeID
+				selected: true // by default the MockData is sorted by EmployeeID
 			}));
 
 			this._oVSD.addSortItem(new ViewSettingsItem({
@@ -64,7 +84,7 @@ sap.ui.define([
 			}));
 		},
 
-		_applySearchFilter : function (sSearchQuery) {
+		_applySearchFilter: function (sSearchQuery) {
 			var aFilters, oFilter, oBinding;
 
 			// first check if we already have this search value
@@ -79,7 +99,10 @@ sap.ui.define([
 			if (sSearchQuery && sSearchQuery.length > 0) {
 				aFilters.push(new Filter("FirstName", FilterOperator.Contains, sSearchQuery));
 				aFilters.push(new Filter("LastName", FilterOperator.Contains, sSearchQuery));
-				oFilter = new Filter({ filters: aFilters, and: false });  // OR filter
+				oFilter = new Filter({
+					filters: aFilters,
+					and: false
+				}); // OR filter
 			} else {
 				oFilter = null;
 			}
@@ -95,7 +118,7 @@ sap.ui.define([
 		 * @param {string} sortDescending	true or false as a string or boolean value to specify a descending sorting
 		 * @private
 		 */
-		_applySorter : function (sSortField, sortDescending){
+		_applySorter: function (sSortField, sortDescending) {
 			var bSortDescending, oBinding, oSorter;
 
 			// only continue if we have a valid sort field
@@ -105,7 +128,7 @@ sap.ui.define([
 				if (typeof sortDescending === "string") {
 					bSortDescending = sortDescending === "true";
 				} else if (typeof sortDescending === "boolean") {
-					bSortDescending =  sortDescending;
+					bSortDescending = sortDescending;
 				} else {
 					bSortDescending = false;
 				}
@@ -127,7 +150,7 @@ sap.ui.define([
 			}
 		},
 
-		_syncViewSettingsDialogSorter : function (sSortField, bSortDescending) {
+		_syncViewSettingsDialogSorter: function (sSortField, bSortDescending) {
 			// the possible keys are: "EmployeeID" | "FirstName" | "LastName"
 			// Note: no input validation is implemented here
 			this._oVSD.setSelectedSortItem(sSortField);
