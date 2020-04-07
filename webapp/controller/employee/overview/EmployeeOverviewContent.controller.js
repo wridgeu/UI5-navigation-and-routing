@@ -38,7 +38,6 @@ sap.ui.define([
 		_onRouteMatched: function (oEvent) {
 			// save the current query state
 			this._oRouterArgs = oEvent.getParameter("arguments");
-			//make sure we either have a value or empty hand empty object
 			this._oRouterArgs["?query"] = this._oRouterArgs["?query"] || {};
 			var oQueryParameter = this._oRouterArgs["?query"];
 
@@ -46,10 +45,17 @@ sap.ui.define([
 			this._applySearchFilter(this._oRouterArgs["?query"].search);
 			// sorting via URL hash
 			this._applySorter(oQueryParameter.sortField, oQueryParameter.sortDescending);
+			// show dialog via URL hash
+			if (oQueryParameter.showDialog) {
+				this._oVSD.open();
+			}
 		},
 
 		onSortButtonPressed: function () {
-			this._oVSD.open();
+			// this._oVSD.open();
+			var oRouter = this.getRouter();
+			this._oRouterArgs["?query"].showDialog = 1;
+			oRouter.navTo("employeeOverview", this._oRouterArgs);
 		},
 
 		onSearchEmployeesTable: function (oEvent) {
@@ -57,10 +63,10 @@ sap.ui.define([
 			var oRouter = this.getRouter();
 			// update the hash with the current search term -> ?search=<searchValue>
 			this._oRouterArgs["?query"].search = oEvent.getSource().getValue();
-			oRouter.navTo("employeeOverview", this._oRouterArgs, true /*no history*/);
+			oRouter.navTo("employeeOverview", this._oRouterArgs, true /*no history*/ );
 		},
 
-		_initViewSettingsDialog: function () {			
+		_initViewSettingsDialog: function () {
 			var oRouter = this.getRouter();
 			this._oVSD = new ViewSettingsDialog("vsd", {
 				confirm: function (oEvent) {
@@ -68,7 +74,11 @@ sap.ui.define([
 					this._applySorter(oSortItem.getKey(), oEvent.getParameter("sortDescending"));
 					this._oRouterArgs["?query"].sortField = oSortItem.getKey();
 					this._oRouterArgs["?query"].sortDescending = oEvent.getParameter("sortDescending");
-					oRouter.navTo("employeeOverview", this._oRouterArgs, true /*without history*/);
+					oRouter.navTo("employeeOverview", this._oRouterArgs, true /*without history*/ );
+				}.bind(this),
+				cancel: function () {
+					delete this._oRouterArgs["?query"].showDialog;
+					oRouter.navTo("employeeOverview", this._oRouterArgs, true /*without history*/ );
 				}.bind(this)
 			});
 
