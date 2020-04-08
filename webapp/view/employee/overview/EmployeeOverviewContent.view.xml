@@ -1,9 +1,7 @@
-<mvc:View
-	controllerName="com.mrb.UI5-Navigation-and-Routing.controller.employee.overview.EmployeeOverviewContent"
-	xmlns="sap.m"
+<mvc:View controllerName="com.mrb.UI5-Navigation-and-Routing.controller.employee.overview.EmployeeOverviewContent" 
+	xmlns="sap.m" 
 	xmlns:mvc="sap.ui.core.mvc">
-	<Table id="employeesTable"
-		items="{/Employees}">
+	<Table id="employeesTable" items="{/Employees}" itemPress=".onItemPressed">
 		<headerToolbar>
 			<Toolbar>
 				<Title text="{i18n>Employees}" level="H2"/>
@@ -13,18 +11,36 @@
 			</Toolbar>
 		</headerToolbar>
 		<columns>
-			<Column id="employeeIDCol"><Text text="{i18n>EmployeeID}"/></Column>
-			<Column id="firstNameCol" demandPopin="true"><Text text="{i18n>formFirstName}"/></Column>
-			<Column id="lastNameCol" demandPopin="true"><Text text="{i18n>formLastName}"/></Column>
-			<Column id="addressCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>formAddress}"/></Column>
-			<Column id="cityCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>formCity}"/></Column>
-			<Column id="regionCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>Region}"/></Column>
-			<Column id="postalCodeCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>formPostalCode}"/></Column>
-			<Column id="countryCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>formCountry}"/></Column>
-			<Column id="homePhoneCol" minScreenWidth="Tablet" demandPopin="true" hAlign="Right"><Text text="{i18n>Phone}"/></Column>
+			<Column id="employeeIDCol">
+				<Text text="{i18n>EmployeeID}"/>
+			</Column>
+			<Column id="firstNameCol" demandPopin="true">
+				<Text text="{i18n>formFirstName}"/>
+			</Column>
+			<Column id="lastNameCol" demandPopin="true">
+				<Text text="{i18n>formLastName}"/>
+			</Column>
+			<Column id="addressCol" minScreenWidth="Tablet" demandPopin="true">
+				<Text text="{i18n>formAddress}"/>
+			</Column>
+			<Column id="cityCol" minScreenWidth="Tablet" demandPopin="true">
+				<Text text="{i18n>formCity}"/>
+			</Column>
+			<Column id="regionCol" minScreenWidth="Tablet" demandPopin="true">
+				<Text text="{i18n>Region}"/>
+			</Column>
+			<Column id="postalCodeCol" minScreenWidth="Tablet" demandPopin="true">
+				<Text text="{i18n>formPostalCode}"/>
+			</Column>
+			<Column id="countryCol" minScreenWidth="Tablet" demandPopin="true">
+				<Text text="{i18n>formCountry}"/>
+			</Column>
+			<Column id="homePhoneCol" minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+				<Text text="{i18n>Phone}"/>
+			</Column>
 		</columns>
 		<items>
-			<ColumnListItem>
+			<ColumnListItem type="Active">
 				<cells>
 					<Text text="{EmployeeID}"/>
 					<Text text="{FirstName}"/>
