@@ -44,7 +44,7 @@ npm start
 * Step 13: Make Table Sorting Bookmarkable :white_check_mark: [4cfa12f](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/4cfa12f50b93c4601c0ecb02e4bb37d1e2fad2ab)
 * Step 14: Make Dialogs Bookmarkable :white_check_mark: [6927b79](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/6927b7938c44e94166f723ae514970e16808b755)
 * Step 15: Reuse an Existing Route :white_check_mark: [d747ffe](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/d747ffee73852a4bbde490ca89e9bec3649b3e48)
-* Step 16: Handle Invalid Hashes by Listening to Bypassed Events
+* Step 16: Handle Invalid Hashes by Listening to Bypassed Events :white_check_mark: [08791dc](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/08791dcfbbf01b9d0f059fa941bb9060d9edb4f6)
 * Step 17: Listen to Matched Events of Any Route
 
 Implemented = :white_check_mark:
