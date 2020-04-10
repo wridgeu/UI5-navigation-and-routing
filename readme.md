@@ -26,6 +26,13 @@ npm install
 
 npm start
 ```
+## Namespace & Projectname
+
+The paths within this project are - as usual - prefixed by the `projectId` ( which is declared within the `manifest.json` file). The prefix is made up by a given namespace and projectname. I must admit that the projectname is a bit too verbose.
+
+* Namespace: `com.mrb`
+* Projectname: `UI5-Navigation-and-Routing`
+
 
 # Tutorial Steps
 
@@ -45,7 +52,7 @@ npm start
 * Step 14: Make Dialogs Bookmarkable :white_check_mark: [6927b79](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/6927b7938c44e94166f723ae514970e16808b755)
 * Step 15: Reuse an Existing Route :white_check_mark: [d747ffe](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/d747ffee73852a4bbde490ca89e9bec3649b3e48)
 * Step 16: Handle Invalid Hashes by Listening to Bypassed Events :white_check_mark: [08791dc](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/08791dcfbbf01b9d0f059fa941bb9060d9edb4f6)
-* Step 17: Listen to Matched Events of Any Route
+* Step 17: Listen to Matched Events of Any Route :white_check_mark: [9298a5d](https://github.com/SAPMarco/UI5-navigation-and-routing/commit/9298a5d451a8ae5ea83c207c041c28bc513dcfeb)
 
 Implemented = :white_check_mark:
 
