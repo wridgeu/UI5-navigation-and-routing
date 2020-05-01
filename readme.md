@@ -28,7 +28,7 @@ npm start
 ```
 ## Namespace & Projectname
 
-The paths within this project are - as usual - prefixed by the `projectId` ( which is declared within the `manifest.json` file). The prefix is made up by a given namespace and projectname. I must admit that the projectname is a bit verbose.
+The paths within this project are - as usual - prefixed by the `projectId` ( which is declared within the `manifest.json` file). The prefix is made up by a given namespace and the name of the project. I must admit that the project name is quite verbose.
 
 * Namespace: `com.mrb`
 * Projectname: `UI5-Navigation-and-Routing`
