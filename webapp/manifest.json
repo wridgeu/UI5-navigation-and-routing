@@ -103,21 +103,21 @@
 					"target": "employees"
 				},
 				{
-					"pattern": "employees/overview:?query:",
 					"name": "employeeOverview",
+					"pattern": "employees/overview:?query:",
 					"target": [
 						"employeeOverviewTop",
 						"employeeOverviewContent"
 					]
 				},
 				{
-					"pattern": "employees/{employeeId}",
 					"name": "employee",
+					"pattern": "employees/{employeeId}",
 					"target": "employee"
 				},
 				{
-					"pattern": "employees/{employeeId}/resume:?query:",
 					"name": "employeeResume",
+					"pattern": "employees/{employeeId}/resume:?query:",
 					"target": "employeeResume"
 				}
 			],
