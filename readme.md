@@ -21,7 +21,7 @@ Hint: it already uses the livereload-middleware for the [UI5 tooling](https://gi
     ```sh
     git clone <repository-url>
     ```
-2. Move into the cloned directory  
+2. Move into the cloned repository 
     ```sh
     cd <repository>
     ```
