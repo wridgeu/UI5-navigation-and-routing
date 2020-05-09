@@ -21,15 +21,15 @@ Hint: it already uses the livereload-middleware for the [UI5 tooling](https://gi
     ```sh
     git clone <repository-url>
     ```
-2. Move into the cloned repository 
+1. Move into the cloned repository 
     ```sh
     cd <repository>
     ```
-3. Install all dependencies
+1. Install all dependencies
     ```sh
     npm install
     ```
-4. Start the application
+1. Start the application
     ```sh
     npm start
     ```
