@@ -12,20 +12,27 @@ You basically read it like this - starting from the home page (here simply calle
 
 ![](readme_images/routing_overview.png)
 
-# Get Started
+# Getting Started
 You can just clone this repository, run npm install and use the [UI5 tooling](https://github.com/SAP/ui5-tooling) to locally serve the application in order to debug/learn from it.
 
 Hint: it already uses the livereload-middleware for the [UI5 tooling](https://github.com/SAP/ui5-tooling), so changes while serving will trigger an immediate update in the browser.
 
-```sh
-git clone <repository-url>
-
-cd <repository>
-
-npm install
-
-npm start
-```
+1. Clone the repository
+    ```sh
+    git clone <repository-url>
+    ```
+2. Move into the cloned directory  
+    ```sh
+    cd <repository>
+    ```
+3. Install all dependencies
+    ```sh
+    npm install
+    ```
+4. Start the application
+    ```sh
+    npm start
+    ```
 ## Namespace & Projectname
 
 The paths within this project are - as usual - prefixed by the `projectId` ( which is declared within the `manifest.json` file). The prefix is made up by a given namespace and the name of the project. I must admit that the project name is quite verbose.
