@@ -15,7 +15,7 @@ You basically read it like this - starting from the home page (here simply calle
 # Getting Started
 You can just clone this repository, run npm install and use the [UI5 tooling](https://github.com/SAP/ui5-tooling) to locally serve the application in order to debug/learn from it.
 
-Hint: it already uses the livereload-middleware for the [UI5 tooling](https://github.com/SAP/ui5-tooling), so changes while serving will trigger an immediate update in the browser.
+* __Note:__ it already uses the livereload-middleware for the [UI5 tooling](https://github.com/SAP/ui5-tooling), so changes while serving will trigger an immediate update in the browser.
 
 1. Clone the repository
     ```sh
@@ -39,7 +39,6 @@ The paths within this project are - as usual - prefixed by the `projectId` ( whi
 
 * Namespace: `com.mrb`
 * Projectname: `UI5-Navigation-and-Routing`
-
 
 # Tutorial Steps
 
@@ -65,9 +64,7 @@ Implemented = :white_check_mark:
 
 # Credits
 
-For more information check:
-
-* [Wiki entry](https://github.com/SAPMarco/SAPMarco.github.io/wiki/UI5-Basics-of-Routing) for basics of routing or 
+* [Wiki - Basics of Routing](https://github.com/SAPMarco/SAPMarco.github.io/wiki/UI5-Basics-of-Routing)
 * [UI5 documentation](https://sapui5.hana.ondemand.com/#/topic/1b6dcd39a6a74f528b27ddb22f15af0d)
 * [UI5ers Buzz #46 - routing with nested components](https://blogs.sap.com/2020/02/05/ui5er-buzz-46-routing-with-nested-components/)
 * [UI5ers Buzz #48 - title changes of nested components](https://blogs.sap.com/2020/03/23/ui5ers-buzz-48-consuming-title-changes-of-nested-components/)
