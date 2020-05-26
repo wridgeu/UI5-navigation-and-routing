@@ -10,7 +10,7 @@ You basically read it like this - starting from the home page (here simply calle
 * Navigate to a list of employees and drill further down to see a _Details_ page for each employee
 * Show an _Employee Overview_ that they can search and sort
 
-![](readme_images/routing_overview.png)
+![](readme_src/routing_overview.png)
 
 # Getting Started
 You can just clone this repository, run npm install and use the [UI5 tooling](https://github.com/SAP/ui5-tooling) to locally serve the application in order to debug/learn from it.
