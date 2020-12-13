@@ -1,6 +1,6 @@
 {
         "name": "UI5-Navigation-and-Routing",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "repository": {
                 "type": "git",
                 "directory": "https://github.com/SAPMarco/UI5-navigation-and-routing"
@@ -15,13 +15,13 @@
                 "build:ui": "ui5 build --clean-dest --dest approuter/webapp"
         },
         "dependencies": {
-                "shx": "^0.3.2"
+                "shx": "^0.3.3"
         },
         "devDependencies": {
                 "@openui5/ts-types": "^1.60.5",
-                "@ui5/cli": "^2.4.4",
-                "eslint": "^7.9.0",
-                "ui5-middleware-livereload": "^0.4.2"
+                "@ui5/cli": "^2.6.6",
+                "eslint": "^7.15.0",
+                "ui5-middleware-livereload": "^0.4.3"
         },
         "ui5": {
                 "dependencies": [
