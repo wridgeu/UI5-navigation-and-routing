@@ -3,6 +3,7 @@ sap.ui.define([
 ], function (BaseController) {
 	"use strict";
 	return BaseController.extend("com.mrb.UI5-Navigation-and-Routing.controller.employee.EmployeeList", {
+
 		onListItemPressed: function (oEvent) {
 			var oItem, oCtx;
 			oItem = oEvent.getSource();
@@ -11,5 +12,6 @@ sap.ui.define([
 				employeeId: oCtx.getProperty("EmployeeID")
 			});
 		}
+		
 	});
 });

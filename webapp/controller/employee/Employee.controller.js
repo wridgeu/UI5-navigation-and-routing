@@ -20,6 +20,7 @@ sap.ui.define([
 			}, this);
 			*/
 		},
+		
 		_onRouteMatched: function (oEvent) {
 			var oArgs, oView;
 			oArgs = oEvent.getParameter("arguments");
@@ -38,12 +39,14 @@ sap.ui.define([
 				}
 			});
 		},
+
 		_onBindingChange: function (oEvent) {
 			// No data for the binding
 			if (!this.getView().getBindingContext()) {
 				this.getRouter().getTargets().display("notFound");
 			}
 		},
+		
 		onShowResume: function (oEvent) {
 			var oCtx = this.getView().getElementBinding().getBoundContext();
 
