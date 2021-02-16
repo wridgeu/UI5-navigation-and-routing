@@ -22,7 +22,7 @@ sap.ui.define([
 				var sHash = oEvent.getParameter("hash");
 				// Do something here, i.e. send logging data to the backend for analysis
 				// telling what resource the user tried to access...
-				//Log.info("Sorry, but the hash '" + sHash + "' is invalid.", "The resource was not found.");
+				// Log.info("Sorry, but the hash '" + sHash + "' is invalid.", "The resource was not found.");
 				MsgToast.show("Invalid hash: '" + sHash + "'. Bypassed was hit.");
 			});
 			oRouter.attachRouteMatched(function (oEvent){

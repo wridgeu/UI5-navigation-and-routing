@@ -22,10 +22,10 @@ sap.ui.define([
 				path: "/Employees(" + oArgs.employeeId + ")",
 				events: {
 					change: this._onBindingChange.bind(this),
-					dataRequested: function (oEvent) {
+					dataRequested: function (_) {
 						oView.setBusy(true);
 					},
-					dataReceived: function (oEvent) {
+					dataReceived: function (_) {
 						oView.setBusy(false);
 					}
 				}

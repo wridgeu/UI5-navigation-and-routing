@@ -9,8 +9,8 @@ sap.ui.define([
 		onInit: function () {
 			var oRouter = this.getRouter();
 			oRouter.getRoute("employee").attachMatched(this._onRouteMatched, this);
-			// Hint: we don't want to do it this way
-			/*
+
+			/* Hint: we don't want to do it this way
 			oRouter.attachRouteMatched(function (oEvent){
 				var sRouteName, oArgs, oView;
 				sRouteName = oEvent.getParameter("name");
@@ -30,24 +30,24 @@ sap.ui.define([
 				path: "/Employees(" + oArgs.employeeId + ")",
 				events: {
 					change: this._onBindingChange.bind(this),
-					dataRequested: function (oEvent) {
+					dataRequested: function (_) {
 						oView.setBusy(true);
 					},
-					dataReceived: function (oEvent) {
+					dataReceived: function (_) {
 						oView.setBusy(false);
 					}
 				}
 			});
 		},
 
-		_onBindingChange: function (oEvent) {
+		_onBindingChange: function (_) {
 			// No data for the binding
 			if (!this.getView().getBindingContext()) {
 				this.getRouter().getTargets().display("notFound");
 			}
 		},
 		
-		onShowResume: function (oEvent) {
+		onShowResume: function (_) {
 			var oCtx = this.getView().getElementBinding().getBoundContext();
 
 			this.getRouter().navTo("employeeResume", {

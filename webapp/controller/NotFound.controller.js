@@ -4,9 +4,8 @@ sap.ui.define([
 	"use strict";
 	return BaseController.extend("com.mrb.UI5-Navigation-and-Routing.controller.NotFound", {
 		onInit: function () {
-			var oRouter, oTarget;
-			oRouter = this.getRouter();
-			oTarget = oRouter.getTarget("notFound");
+			var oTarget = this.getRouter().getTarget("notFound");
+			
 			oTarget.attachDisplay(function (oEvent) {
 				this._oData = oEvent.getParameter("data"); // store the data
 			}, this);

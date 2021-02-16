@@ -5,9 +5,8 @@ sap.ui.define([
 	return BaseController.extend("com.mrb.UI5-Navigation-and-Routing.controller.employee.EmployeeList", {
 
 		onListItemPressed: function (oEvent) {
-			var oItem, oCtx;
-			oItem = oEvent.getSource();
-			oCtx = oItem.getBindingContext();
+			var oCtx = oEvent.getSource().getBindingContext();
+			
 			this.getRouter().navTo("employee", {
 				employeeId: oCtx.getProperty("EmployeeID")
 			});

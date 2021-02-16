@@ -177,10 +177,9 @@ sap.ui.define([
 		},
 
 		onItemPressed: function (oEvent) {
-			var oItem, oCtx;
-			oItem = oEvent.getParameter("listItem");
-			oCtx = oItem.getBindingContext();
-			this.getRouter().navTo("employeeResume",{
+			var  oCtx = oEvent.getParameter("listItem").getBindingContext();
+			
+			this.getRouter().navTo("employeeResume", {
 				employeeId : oCtx.getProperty("EmployeeID"),
 				"?query": {
 					tab: "Info"
