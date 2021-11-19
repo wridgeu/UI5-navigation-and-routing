@@ -18,10 +18,10 @@
                 "shx": "^0.3.3"
         },
         "devDependencies": {
-                "@openui5/ts-types": "^1.60.5",
-                "@ui5/cli": "^2.10.0",
-                "eslint": "^8.0.0",
-                "ui5-middleware-livereload": "^0.5.2"
+                "@openui5/ts-types": "^1.90.8",
+                "@ui5/cli": "^2.14.1",
+                "eslint": "^8.2.0",
+                "ui5-middleware-livereload": "^0.5.8"
         },
         "ui5": {
                 "dependencies": [
