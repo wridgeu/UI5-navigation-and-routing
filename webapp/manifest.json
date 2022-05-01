@@ -22,21 +22,14 @@
 	},
 	"sap.ui": {
 		"technology": "UI5",
-		"icons": {
-			"icon": "",
-			"favIcon": "",
-			"phone": "",
-			"phone@2": "",
-			"tablet": "",
-			"tablet@2": ""
-		},
+		"icons": {},
 		"deviceTypes": {
 			"desktop": true,
 			"tablet": true,
 			"phone": true
 		},
 		"supportedThemes": [
-			"sap_fiori_3"
+			"sap_horizon"
 		]
 	},
 	"sap.ui5": {
@@ -47,7 +40,7 @@
 			"id": "app"
 		},
 		"dependencies": {
-			"minUI5Version": "1.60.0",
+			"minUI5Version": "1.101.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},

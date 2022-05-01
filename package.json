@@ -15,13 +15,13 @@
                 "build:ui": "ui5 build --clean-dest --dest approuter/webapp"
         },
         "dependencies": {
-                "shx": "^0.3.3"
+                "shx": "^0.3.4"
         },
         "devDependencies": {
-                "@openui5/ts-types": "^1.90.8",
-                "@ui5/cli": "^2.14.1",
-                "eslint": "^8.2.0",
-                "ui5-middleware-livereload": "^0.5.8"
+                "@openui5/ts-types": "^1.101.0",
+                "@ui5/cli": "^2.14.8",
+                "eslint": "^8.14.0",
+                "ui5-middleware-livereload": "^0.5.11"
         },
         "ui5": {
                 "dependencies": [
